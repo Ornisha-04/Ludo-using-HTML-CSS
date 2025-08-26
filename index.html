@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+      
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 400px;
+            width: 400px;
+        
+            display: grid;
+            grid-template-columns:auto auto auto;
+        
+        }
+        .box{
+            border: 0.1px black solid;
+            box-sizing: border-box;
+        }
+        .red-home{
+            display:grid;
+            grid-template-columns: auto auto;
+            height: 100%;
+            gap: 10px
+        }
+        .red-item
+        {
+            border: 0.1px solid black;
+            border-radius: 100%;
+            background-color: red;
+
+        }
+        .green-home{
+            display:grid;
+            grid-template-columns: auto auto;
+            height: 100%;
+            gap: 10px
+                     }
+        
+        .green-item
+        {
+            border:  0.1px solid black;
+            border-radius: 100%;
+            background-color: green;
+        }
+        .blue-home
+          {
+            display:grid;
+            grid-template-columns: auto auto;
+            height: 100%;
+            gap: 10px;
+          }
+          .blue-item{
+            border: 0.1px solid black;
+            border-radius: 100%;
+            background-color:blue;
+        }
+        .yellow-home{
+            display:grid;
+            grid-template-columns: auto auto;
+            height: 100%;
+            gap: 10px
+          }
+          .yellow-item{
+            border: 1px solid black;
+            border-radius: 100%;
+            background-color:yellow;
+          }
+          .cell{
+            border: 1px solid black;
+          }
+          .vertical-grid-container{
+            height: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+          }
+          .cell{
+            border: 0.1px solid black;
+            box-sizing: border-box;
+          }
+          .horizontal-grid-container{
+            height: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+          }
+          .red{
+            background-color: red;
+          }
+          .green{
+            background-color: green;
+          }
+          .blue{
+            background-color: blue;
+          }
+          .yellow{
+            background-color: yellow;
+          }
+          .home{ 
+            height: 0px;
+            width: 0px;
+            box-sizing: border-box;
+            border-left: 60px red solid;
+            border-bottom: 60px blue solid;
+            border-right: 60px yellow solid;
+            border-top: 60px green solid;
+
+          }
+          .red-home,.green-home,.yellow-home,.blue-home{
+            height: 120px;
+            width: 120px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+          }
+          .cell + .cell
+          {
+            border-top:none;
+            border-left:none;
+          }
+
+
+
+        
+
+                     
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box red" style="padding: 10px;">
+        <div class="red-home">
+            <div class="red-item"></div>
+            <div class="red-item"></div>
+            <div class="red-item"></div>
+            <div class="red-item"></div>
+
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="vertical-grid-container">
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell green"></div>
+         <div class="cell green"></div>
+         <div class="cell green"></div>
+         <div class="cell green"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell green"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell green"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell green"></div>
+         <div class="cell"></div>
+        </div>
+    </div>
+    <div class="box green" style="padding: 10px;">
+        <div class="green-home">
+            <div class="green-item"></div>
+            <div class="green-item"></div>
+            <div class="green-item"></div>
+            <div class="green-item"></div>
+
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="horizontal-grid-container">
+            <div class="cell"></div>
+            <div class="cell red"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell red"></div>
+            <div class="cell red"></div>
+            <div class="cell red"></div>
+            <div class="cell red"></div>
+            <div class="cell red"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell red"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+        </div>
+         
+           </div>
+    <div class="box">
+        <div class="home"></div>
+    </div>
+    <div class="box">
+        <div class="horizontal-grid-container">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell yellow"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell yellow"></div>
+            <div class="cell yellow"></div>
+            <div class="cell yellow"></div>
+            <div class="cell yellow"></div>
+            <div class="cell yellow"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell yellow"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+
+    
+    <div class="box blue" style="padding: 10px;">
+        <div class="blue-home">
+            <div class="blue-item"></div>
+            <div class="blue-item"></div>
+            <div class="blue-item"></div>
+            <div class="blue-item"></div>
+
+
+        </div>
+    </div>
+    <div class="box">
+     <div class=" vertical-grid-container">
+        <div class="cell"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+    </div>
+
+    <div class="box yellow" style="padding: 10px;">
+    <div class="yellow-home">
+            <div class="yellow-item"></div>
+            <div class="yellow-item"></div>
+            <div class="yellow-item"></div>
+            <div class="yellow-item"></div>
+    </div>
+
+    </div>
+
+    
+</body>
+</html>
